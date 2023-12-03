@@ -1,3 +1,4 @@
+//import axios from "axios";
 var newMessage = document.createElement('div');
 // 获取当前用户的用户名
 var username = 'User';
@@ -31,10 +32,14 @@ function sendMessage(text) {
     newMessage.classList.add('userMessage');
     // 设置消息内容和样式
     newMessage.innerHTML = message;
+    var url = 'http://localhost:8080/test';
+    var data = {
+        text: message,
+    };
     // 将消息添加到对话展示框中
     if (message) {
         chatDisplay === null || chatDisplay === void 0 ? void 0 : chatDisplay.appendChild(newMessage);
-        robotSend(text);
+        //robotSend(text);
     }
     // 清空输入框
     if (messageInput != null)
