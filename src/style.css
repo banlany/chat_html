@@ -54,3 +54,32 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+.userMessage{
+    background-color : #428bca;
+    color : white;
+    margin-bottom : 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 10px;
+    line-height: 20px;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    height:auto;
+    word-break: break-all;
+}
+.robotMessage{
+    background-color : #ffffff;
+    color : rgb(0, 0, 0);
+    margin-bottom : 10px;
+    display: flex;
+    margin-right: auto;
+    padding: 10px;
+    line-height: 20px;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    height:auto;
+    word-break: break-all;
+}

@@ -1,3 +1,4 @@
+
 //获取头像
 const userUrl ='./img/chat.ico'
 const rUrl = './img/bili.ico'
@@ -59,15 +60,19 @@ function sendMessage() {
 
     if(message.length > 0){
         chatDisplay.appendChild(newMessage);
-        r_sent('sorry');
+        rSent('sorry');
     }
     // 清空输入框
     if (messageInput != null)
         messageInput.value = '';
     
 }
-function r_sent(answer) {
+function rSent(answer) {
     //定义新的消息元素
+    let me = Message;
+    me.message = answer;
+    me.id=1000;
+    console.log(me);
     const newMessage = document.createElement('div');
     newMessage.innerHTML = answer;
     newMessage.style.backgroundColor = '#ffffff';
