@@ -1,15 +1,5 @@
-// 获取用户头像的URL
-const avatarUrl = './img/chat.ico';
 
-// 创建并设置头像元素
-const avatar = document.createElement('img');
-avatar.src = avatarUrl;
-avatar.width = 32;
-avatar.height = 32;
-
-// 将头像元素添加到消息元素的前面
 let newMessage = document.createElement('div');
-newMessage?.insertBefore(avatar, newMessage.firstChild);
 // 获取当前用户的用户名
 const username = 'User';
 
